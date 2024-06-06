@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mining Zones in Thailand</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="locate-btn">⚠️คลิกเพื่อ - ค้นหาเหมืองใกล้คุณ ⛏️</button>
+    <div id="description">
+      <h2>แผนที่เหมืองใกล้ฉัน</h2>
+      <p>
+        แผนที่นี้สร้างขึ้นมาจากข้อมูลพื้นที่ที่มีศักยภาพในการทำเหมือง
+        หรือพื้นที่ๆ อาจจะสร้างเป็น
+        <strong>เหมืองในอนาคต</strong> ตามแผนแม่บทการบริหารจัดการแร่ ฉบับที่๒
+      </p>
+      <p>แหล่งข้อมูล:</p>
+      <ul>
+        <li>
+          <a href="https://data.dmr.go.th/dataset/minepotential"
+            >กรมทรัพยากรธรณี</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div id="map"></div>
+    <img src="Pi-Logo.svg" id="logo" alt="Logo" />
+    <!-- Add your logo here -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="colorMapping.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+#map {
+  height: 100vh;
+}
+
+#locate-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background: #aacfce;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+#locate-btn:hover {
+  background: #f0f0f0;
+}
+
+#description {
+  position: absolute;
+  top: 80vh;
+  left: 20px;
+  z-index: 999;
+  background: #aacfce;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  font-size: 12px;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+#description h2 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+#description p,
+#description ul {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+#description ul {
+  padding-left: 20px;
+}
+
+.leaflet-top.leaflet-left {
+  top: 150px;
+}
+
+.leaflet-interactive {
+  pointer-events: auto;
+}
+
+.leaflet-overlay-pane {
+  pointer-events: none;
+}
+
+.leaflet-marker-pane,
+.leaflet-shadow-pane,
+.leaflet-overlay-pane .leaflet-interactive,
+.leaflet-tile-pane {
+  pointer-events: auto;
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 1000;
+  width: 120px; /* Adjust the size as needed */
+  drop-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #c0e9e7;
+  color: #333;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
