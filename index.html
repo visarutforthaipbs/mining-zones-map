@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mining Zones in Thailand</title>
+    <title>แผนที่เหมืองใกล้ฉัน</title>
+    <link rel="icon" type="image/x-icon" href="icons8-home-69.png" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css" />
+    <!-- for Google -->
+    <meta
+      name="keywords"
+      content="แผนที่เหมืองใกล้ฉัน, แผนที่เหมืองในประเทศไทย, พื้นที่ศักยภาพในการทำเหมือง, เหมืองในประเทศไทย"
+    />
+    <meta name="author" content="วิศรุต แสนคำ/PI" />
+
+    <!-- for Facebook -->
+    <meta property="og:title" content="แผนที่เหมืองใกล้ฉัน" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="cover.png" />
+    <meta property="og:description" content="แผนที่เหมืองใกล้ฉัน" />
   </head>
   <body>
     <button id="locate-btn">⚠️คลิกเพื่อ - ค้นหาเหมืองใกล้คุณ ⛏️</button>
     <div id="description">
       <h2>แผนที่เหมืองใกล้ฉัน</h2>
       <p>
-        แผนที่นี้สร้างขึ้นมาจากข้อมูลพื้นที่ที่มีศักยภาพในการทำเหมือง
+        แผนที่นี้สร้างขึ้นมาจากข้อมูล
+        <strong>พื้นที่ที่มีศักยภาพในการทำเหมือง</strong>
         หรือพื้นที่ๆ อาจจะสร้างเป็น
         <strong>เหมืองในอนาคต</strong> ตามแผนแม่บทการบริหารจัดการแร่ ฉบับที่๒
       </p>
