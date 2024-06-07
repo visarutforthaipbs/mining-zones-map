@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>แผนที่เหมืองใกล้ฉัน</title>
     <link rel="icon" type="image/x-icon" href="icons8-home-69.png" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="style.css" />
     <!-- for Google -->
@@ -21,7 +21,9 @@
     <meta property="og:description" content="แผนที่เหมืองใกล้ฉัน" />
   </head>
   <body>
-    <button id="locate-btn">⚠️คลิกเพื่อ - ค้นหาเหมืองใกล้คุณ ⛏️</button>
+    <button id="locate-btn">
+      ⚠️คลิกเพื่อ - ค้นหาพื้นที่ทำเหมืองได้ใกล้ๆ คุณ ⛏️
+    </button>
     <div id="description">
       <h2>แผนที่เหมืองใกล้ฉัน</h2>
       <p>
@@ -40,8 +42,8 @@
       </ul>
     </div>
     <div id="map"></div>
+
     <img src="Pi-Logo.svg" id="logo" alt="Logo" />
-    <!-- Add your logo here -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script type="module" src="colorMapping.js"></script>
     <script type="module" src="script.js"></script>
