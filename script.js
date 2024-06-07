@@ -89,6 +89,9 @@ function onLocationFound(e) {
     weight: 2, // Border width
     interactive: false, // Set interactive to false
   }).addTo(map);
+
+  // Hide the locate button after finding the location
+  document.getElementById("locate-btn").style.display = "none";
 }
 
 function onLocationError(e) {
